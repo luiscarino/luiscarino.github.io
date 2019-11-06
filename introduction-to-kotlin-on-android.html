@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Luis' Blog - Introduction to Kotlin on Android</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125816776-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-125816776-1');
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Luis' Blog: Recipes, stories, and code snippets from my life as an Android developer.</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Introduction to Kotlin on Android</h2>
+								<p>Build your first Android application using Kotlin in 5 minutes.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<p>In this blog post, I'll explain what is Kotlin and review some of the few nice features of the language, and we'll create a Hello World Android app using Kotlin. Let's get started.</p>
+                                    <h2>What is Kotlin?</h2>
+                                    <p>Kotlin is a new programming language created by JetBrains that targets Java platform.</p>
+
+                                    <h4>Kotlin is:</h4>
+                               
+                                    <ul>
+                                        <li><b>Concise:</b> Kotlin syntax clearly expresses the intent of the code you read and doesn't obscure it with boilerplate code.</li>
+                                        <li><b>Pragmatic:</b> Kotlin is a useful language intended to solve problems real-world problems.</li>
+                                        <li><b>Interoperable:</b> Kotlin can work with Java seamlessly. No tricks required: Kotlin classes and methods can be called exactly like regular Java classes and methods. The IDE provides full support for cross-language projects. Making it easy to navigate freely between Java and Kotlin source files, debug mixed-language projects and step between code written in different languages.</li>
+                                        <li><b>Safe:</b> Kotlin help developers find possible errors by adding checks at compile time instead of failing at runtime.</li>
+                                    </ul>
+
+                                    <p>Most important, Kotlin attempts to remove the NullPointerException from your program. Let's take a glance at the next example:</p>
+
+                                    <script src="https://gist.github.com/luiscarino/8b9713aac75d51d1ac5507bfde33016e.js"></script><br />
+
+
+                                    <p>By adding only one single character; a question mark at the end, Kotlin's type system keeps track of values that can and can't be null and forbids operations that can lead to an NPE, helping in reducing the number of application crashes.</p>
+
+                                    <p>Kotlin also helps avoid the ClassCastException by combining the check and the cast into a single operation. Let's see an example:</p>
+                        
+                                    <script src="https://gist.github.com/luiscarino/1f2c486bc9ed06ce6de6b89fcd6d24c1.js"></script>
+                                    <p>Kotlin can be utilized almost everywhere Java is used today. Kotlin works excellent with all existing Java libraries and frameworks and runs with the same level of performance as Java.</p>
+
+                                    <p>Let's analyze a few exciting features of Kotlin by using the following example:</p>
+
+                                    <script src="https://gist.github.com/luiscarino/f442d952edf1f1dc489224835915bbd4.js"></script>
+<p>This example defines a Puppy class, creates a collection of puppies, finds the last one, and prints the result. The features of Kotlin language used on the example were:</p>
+<ul>
+<li>Data class</li>
+<li>Top-level function</li>
+<li>String template</li>
+<li>Nullable type ?; default value for arguments</li>
+<li>Named argument</li>
+<li>Lamda expression; Elvis operator</li>
+<li>Autogenerated to String</li>
+</ul>
+<h3 class="major">
+Kotlin on Android</h3>
+<p>Kotlin language features and Android Studio turn Android development into a more productive and pleasurable experience. Adding listeners, binging layout elements to fields, can be done with less code, or sometimes no code at all thanks to the compiler that works for us and generate the necessary code.</p>
+
+<p>- Anko is a library built by the Kotlin team, improves Android development by adding Kotlin-friendly adapters around many standard Android APIs.</p>
+
+<p>-Handle &amp; track nullability in your code. When using Kotlin, it is easier to keep track of null values that may lead to a NullPointerException. Most of the code that would cause an NPE in Java fails to compile in Kotlin.</p>
+
+<p>- From a performance standpoint, Kotlin code is executed as efficiently as Java code.</p>
+
+<p>Let's build in 5 minutes a Hello World app using Kotlin on Android.</p>
+
+<p>For this tutorial, you need to have Android Studio already installed on your computer. If you haven't installed AS yet, I created a quick tutorial <a href="https://www.luiscarino.io/2018/09/how-to-install-android-studio-32-on-mac.html" target="_blank">how to Install Android Studio.&nbsp;</a></p>
+
+
+<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/rz-nEh0NuxY" width="560"></iframe>
+
+
+<h3 class="major">
+Conclusion</h3>
+
+<p>We've reviewed Kotlin and some of its cool traits, that I can tell you have been helping my team and me at work to write code faster and in a more idiomatic fashion. I believe Kotlin is the future of Android development. If you are serious about the Android development ecosystem, you should give it a shot, and I can guarantee you, after writing a few classes using Kotlin you won't miss Java.</p>
+
+<p>In the next blog post, we'll review functions, variables, classes, enums, and properties. As well as control structures, smart casts, and throwing and handling exceptions and how to apply those concepts in our Android application.</p>
+
+
+									<section class="features">
+										<article>
+											<a href="xcrun-error-invalid-active-developer.html" class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFKXqc-jHkCG9Eqshn6bg8El92G2IXMxto6v-oI2j7AxZ-vTwA" alt="" /></a>
+											<h3 class="major">xcrun: error: invalid active developer path... missing xcrun
+												</h3>
+											<p>Today I updated my Mac to OS Sierra, and when I opened AS...</p>
+											<a href="xcrun-error-invalid-active-developer.html" class="special">Read article</a>
+                                        </article>
+                                        
+                                        <article>
+                                                <a href="how-to-use-gradle-to-find-dependency.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
+                                                <h3 class="major">How to use gradle to find depedencies</h3>
+                                                <p>In this post we'll use gradle and the dependency insight plugin...</p>
+                                                <a href="introduction-to-kotlin-on-android.html" class="special">Read article</a>
+                                            </article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; luiscarino.io All rights reserved. 2019</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
